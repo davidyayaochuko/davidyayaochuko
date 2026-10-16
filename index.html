@@ -7,220 +7,28 @@
   <meta name="description" content="David Ochuko Yaya is a CTO and technical co-founder building Spendprofile, Bidoro, and Ojarun, and mentoring through MEQuest, Thrive Africa, and The Dev Guide 99." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,460;6..72,560&family=Outfit:wght@380;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles.css" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
+  <div class="progress" id="progress" hidden></div>
   <nav class="nav">
-    <a class="nav-brand" href="/">David Ochuko Yaya</a>
-    <div class="nav-links">
-      <a href="#work">Work</a>
-      <a href="#teaching">Teaching</a>
-      <a href="/writing/">Writing</a>
-      <a href="#talk">Contact</a>
+    <a class="nav-brand" href="/" data-nav="home">David Ochuko Yaya</a>
+    <div class="nav-links" id="nav-links">
+      <a href="/#work" data-nav="work">Work</a>
+      <a href="/#skills" data-nav="skills">Skills</a>
+      <a href="/#teaching" data-nav="teaching">Teaching</a>
+      <a href="/writing" data-nav="writing">Writing</a>
+      <a href="/#talk" data-nav="talk">Contact</a>
     </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
   </nav>
-
-  <main class="wrap">
-    <p class="kicker">Lagos · CTO & technical co-founder</p>
-    <h1>I build hard products and keep them standing.</h1>
-    <p class="lede">
-      I own technology direction and engineering delivery at Netan Technologies.
-      The same judgment shows up in three products people can use — statement intelligence,
-      a trust-first marketplace, and market-to-doorstep commerce — and in the rooms where I teach cloud and DevOps.
-    </p>
-    <div class="meta-row">
-      <span>Netan Technologies</span>
-      <span>Spendprofile · Bidoro · Ojarun</span>
-      <span>Open to Founding CTO / Head of Engineering</span>
-    </div>
-
-    <section class="roles" aria-label="How I work">
-      <article class="role">
-        <div class="num">01</div>
-        <h2>The engineer</h2>
-        <p>Nine years from frontline IT into multi-cloud platforms. Kubernetes, Terraform, and the unglamorous work of uptime, cost, and least privilege.</p>
-      </article>
-      <article class="role">
-        <div class="num">02</div>
-        <h2>The founder</h2>
-        <p>Technical co-founder on products with a real constraint: honest numbers, safe trade, or a market run you should not have to make yourself.</p>
-      </article>
-      <article class="role">
-        <div class="num">03</div>
-        <h2>The mentor</h2>
-        <p>I teach the path I walked. Cloud and DevOps cohorts at Thrive Africa and MEQuest, and a community I built so people can get unstuck together.</p>
-      </article>
-    </section>
-
-    <section class="block" id="work">
-      <h2>Three products in market</h2>
-      <p class="sub">Each one is a constraint, not a feature list.</p>
-
-      <article class="item">
-        <div class="num">01</div>
-        <div>
-          <div class="year">Fintech · Technical co-founder</div>
-          <h3>Spendprofile</h3>
-          <p>Nigerian bank statements, read properly. Upload the PDF your bank already gave you. Transactions come out structured, and the extraction is checked against the statement’s own totals. No bank login. No BVN.</p>
-          <div class="tags"><span class="tag">Statement intelligence</span><span class="tag">Reconciliation</span><span class="tag">B2C + B2B API</span></div>
-          <p><a href="https://spendprofile.app">spendprofile.app</a></p>
-        </div>
-      </article>
-
-      <article class="item">
-        <div class="num">02</div>
-        <div>
-          <div class="year">Marketplace · Co-founder & technical lead</div>
-          <h3>Bidoro</h3>
-          <p>A trust-first peer-to-peer marketplace for local commerce. Verified sellers, buyer protection, and payments through a licensed partner — because “just send the money” is not a product.</p>
-          <div class="tags"><span class="tag">Escrow</span><span class="tag">Verification</span><span class="tag">bidoro.africa</span></div>
-          <p><a href="https://bidoro.africa">bidoro.africa</a></p>
-        </div>
-      </article>
-
-      <article class="item">
-        <div class="num">03</div>
-        <div>
-          <div class="year">Local commerce · Technical co-founder</div>
-          <h3>Ojarun</h3>
-          <p>The market, at your door. Agents source fresh food and household items from local markets, check quality, and riders deliver. Built for how Nigerians actually shop, not for a catalogue that pretends the market is a supermarket.</p>
-          <div class="tags"><span class="tag">Agents</span><span class="tag">Sourcing</span><span class="tag">Delivery</span></div>
-          <p><a href="https://ojarun.com">ojarun.com</a></p>
-        </div>
-      </article>
-    </section>
-
-    <section class="block" id="teaching">
-      <h2>Where I teach</h2>
-      <p class="sub">Mentorship is part of the job, not a side hobby.</p>
-
-      <article class="item">
-        <div class="num">01</div>
-        <div>
-          <div class="year">Mentor · Cloud, DevOps</div>
-          <h3>Thrive Africa</h3>
-          <p>Tuition-free career acceleration across Africa. I mentor students through cloud computing and DevOps — consoles, cost guardrails, and the habit of deleting what you created.</p>
-          <p><a href="https://www.thriveafrica.co/">thriveafrica.co</a></p>
-        </div>
-      </article>
-      <article class="item">
-        <div class="num">02</div>
-        <div>
-          <div class="year">Pioneering team · Lead mentor · since 2023</div>
-          <h3>MEQuest</h3>
-          <p>A mentorship community built on collaboration, access, respect, and empowerment. I helped shape the cloud and DevOps path — curriculum, cohorts, and the handoff from learner to mentor.</p>
-          <p><a href="https://mequest.org/">mequest.org</a></p>
-        </div>
-      </article>
-      <article class="item">
-        <div class="num">03</div>
-        <div>
-          <div class="year">Community I built</div>
-          <h3>The Dev Guide 99</h3>
-          <p>Grow. Build. Get unstuck. Not one guide — people guiding each other. A home for builders who need a room, not another lonely tutorial tab.</p>
-          <p><a href="https://thedevguide99.com/">thedevguide99.com</a></p>
-        </div>
-      </article>
-    </section>
-
-    <section class="block" id="writing">
-      <h2>Selected writing</h2>
-      <p class="sub">Notes on trust, platforms, and the decisions behind the products.</p>
-      <div class="writing-list">
-        <a class="row" href="/writing/no-bank-login.html">
-          <h3>Why Spendprofile does not connect to your bank</h3>
-          <p>The permission surface is a file you already have. That constraint is the product.</p>
-          <span class="when">October 2026</span>
-        </a>
-        <a class="row" href="/writing/trust-is-the-product.html">
-          <h3>Trust is the product</h3>
-          <p>Bidoro is not a catalogue with a pay button. The hard part is what happens when a stranger sends money.</p>
-          <span class="when">October 2026</span>
-        </a>
-        <a class="row" href="/writing/cleanup-discipline.html">
-          <h3>If you cannot delete it, you should not create it</h3>
-          <p>A rule I insist on with every cloud cohort — and the same rule I use as a CTO.</p>
-          <span class="when">October 2026</span>
-        </a>
-      </div>
-      <p><a href="/writing/">All writing</a></p>
-    </section>
-
-    <section class="block" id="path">
-      <h2>The path</h2>
-      <p class="sub">Operator first. Then the platforms. Then the products.</p>
-      <ul class="timeline">
-        <li>
-          <div class="year">2026 — now</div>
-          <div>
-            <strong>Chief Technology Officer, Netan Technologies</strong>
-            <div class="where">Technology direction, engineering delivery, and the platforms under Spendprofile, Bidoro, and Ojarun.</div>
-          </div>
-        </li>
-        <li>
-          <div class="year">2021 — 2026</div>
-          <div>
-            <strong>Senior DevOps / Site Reliability Engineer, Netan</strong>
-            <div class="where">Production SaaS across AWS, Azure, and GCP. Hybrid on-prem and Azure that cut infrastructure cost by about half. Terraform that cut manual provisioning by roughly two thirds. 99.9% uptime with zero-trust, micro-segmentation, and key vaults. CI/CD with GitHub Actions, Jenkins, and Argo CD.</div>
-          </div>
-        </li>
-        <li>
-          <div class="year">2024 — now</div>
-          <div>
-            <strong>Co-founder, Bidoro · Spendprofile · Ojarun</strong>
-            <div class="where">Architecture, trust and payments, and the unglamorous reliability work that lets a product stay live.</div>
-          </div>
-        </li>
-        <li>
-          <div class="year">2024</div>
-          <div>
-            <strong>Solutions Architect, Eco-Clouds</strong>
-            <div class="where">Short engagement moving production systems onto Alibaba, Huawei, and Tencent Cloud for clients expanding into APAC.</div>
-          </div>
-        </li>
-        <li>
-          <div class="year">2023 — 2024</div>
-          <div>
-            <strong>Data engineering tutor & DevOps, Data2Bots</strong>
-            <div class="where">Cohorts on Airflow, dbt, Spark, and Kafka, plus the pipelines those classes sat on.</div>
-          </div>
-        </li>
-        <li>
-          <div class="year">2023 — now</div>
-          <div>
-            <strong>Lead mentor, MEQuest</strong>
-            <div class="where">Pioneering team. Cloud and DevOps training, mentor playbooks, and the loop from learner to mentor.</div>
-          </div>
-        </li>
-        <li>
-          <div class="year">2017 — 2021</div>
-          <div>
-            <strong>IT Support, Nestlé</strong>
-            <div class="where">Manufacturing site in Ogun State. Uptime, access, and translating incidents into plain language.</div>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="talk" id="talk">
-      <h2>Let’s talk.</h2>
-      <p>I’m the CTO at Netan, and I still sit with students who are opening a cloud console for the first time. If you are building something that has to be trusted — or you want a founding technology lead — write to me.</p>
-      <p><a href="mailto:davidyayaochuko@gmail.com">davidyayaochuko@gmail.com</a><br />Lagos, Nigeria · remote-friendly</p>
-      <div class="links">
-        <a href="https://www.linkedin.com/in/davidochukoyaya/">LinkedIn</a>
-        <a href="https://x.com/_Ogheneochuko">X</a>
-        <a href="https://medium.com/@davidyayaochuko">Medium</a>
-        <a href="https://spendprofile.app">Spendprofile</a>
-        <a href="https://bidoro.africa">Bidoro</a>
-        <a href="https://ojarun.com">Ojarun</a>
-      </div>
-    </section>
-  </main>
+  <main id="app"></main>
   <footer class="site">
     <span>David Ochuko Yaya</span>
     <span>HND Computer Engineering, Yaba College of Technology · AWS Solutions Architect · Azure Administrator</span>
   </footer>
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>
