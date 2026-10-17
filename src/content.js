@@ -49,8 +49,8 @@ export const teaching = [
     year: "Pioneering team · Lead mentor · since 2023",
     name: "MEQuest",
     body: "A mentorship community built on collaboration, access, respect, and empowerment. I helped shape the cloud and DevOps path, curriculum, cohorts, and the handoff from learner to mentor.",
-    href: "https://mequest.org/",
-    label: "mequest.org",
+    href: "https://learn.mequest.org/",
+    label: "learn.mequest.org",
   },
   {
     num: "03",
@@ -156,7 +156,7 @@ export const essays = [
     homeDek: "A rule I insist on with every cloud cohort, and the same rule I use as a CTO.",
     date: "16 October 2026",
     body: [
-      { p: "I still teach cloud foundations. Not as a second career. Because explaining a thing is how I find out whether I understand it, and because the people coming through <a href=\"https://www.thriveafrica.co/\">Thrive Africa</a> and <a href=\"https://mequest.org/\">MEQuest</a> are often opening a real console for the first time." },
+      { p: "I still teach cloud foundations. Not as a second career. Because explaining a thing is how I find out whether I understand it, and because the people coming through <a href=\"https://www.thriveafrica.co/\">Thrive Africa</a> and <a href=\"https://learn.mequest.org/\">MEQuest</a> are often opening a real console for the first time." },
       { p: "The first lab is never “launch something impressive.” It is MFA, a budget with an email alert, and a tour of the pages that charge you money. Then we build. Then we tear it down before the session ends." },
       { h: "The rule" },
       { p: "If you cannot delete it, you should not create it. That covers the EC2 instance, the disk you forgot, the public storage bucket, the NAT gateway someone enabled “just to try.” It also covers the production habit: every environment needs an owner, a spend ceiling, and a way back." },

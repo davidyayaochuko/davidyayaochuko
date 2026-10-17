@@ -3,7 +3,7 @@
 # David Ochuko Yaya
 
 **CTO & technical co-founder, Netan Technologies**
-Building [Spendprofile](https://spendprofile.app) · [Bidoro](https://bidoro.africa) · [Ojarun](https://ojarun.com) · Mentoring at [MEQuest](https://mequest.org) and [Thrive Africa](https://www.thriveafrica.co/) · Lagos, Nigeria
+Building [Spendprofile](https://spendprofile.app) · [Bidoro](https://bidoro.africa) · [Ojarun](https://ojarun.com) · Mentoring at [MEQuest](https://learn.mequest.org) and [Thrive Africa](https://www.thriveafrica.co/) · Lagos, Nigeria
 
 [LinkedIn](https://www.linkedin.com/in/davidochukoyaya) · [GitHub](https://github.com/davidyayaochuko) · [Medium](https://medium.com/@davidyayaochuko) · [Email](mailto:davidyayaochuko@gmail.com)
 
@@ -19,7 +19,7 @@ This repository is the personal site. Live locally with `npm install` and `npm r
 - **Building [Spendprofile](https://spendprofile.app)**: Nigerian bank statements, read properly. Upload the PDF. No bank login. No BVN.
 - **Building [Bidoro](https://bidoro.africa)**: trust infrastructure for local commerce. Verified sellers, escrow, licensed payments. ₦3m grant from the FGC Idoani Alumni Association, Lagos Chapter.
 - **Building [Ojarun](https://ojarun.com)**: the market, at your door.
-- **Mentoring** at [Thrive Africa](https://www.thriveafrica.co/) and [MEQuest](https://mequest.org). Community I built: [The Dev Guide 99](https://thedevguide99.com).
+- **Mentoring** at [Thrive Africa](https://www.thriveafrica.co/) and [MEQuest](https://learn.mequest.org). Community I built: [The Dev Guide 99](https://thedevguide99.com).
 
 ## Stack
 
