@@ -67,7 +67,7 @@ function piece(entry, href) {
 
 function home() {
   return {
-    title: "David Ochuko Yaya — CTO & technical co-founder",
+    title: "David Ochuko Yaya, CTO & technical co-founder",
     html: `
       <div class="wrap wide">
         <header class="hero">
@@ -76,8 +76,8 @@ function home() {
             <h1>I build hard products and keep them standing.</h1>
             <p class="lede">
               I own technology direction and engineering delivery at Netan Technologies.
-              The same judgment shows up in three products people can use — statement intelligence,
-              a trust-first marketplace, and market-to-doorstep commerce — and in the rooms where I teach cloud and DevOps.
+              The same judgment shows up in three products people can use, statement intelligence,
+              a trust-first marketplace, and market-to-doorstep commerce, and in the rooms where I teach cloud and DevOps.
             </p>
             <div class="meta-row">
               <span>Netan Technologies</span>
@@ -90,19 +90,6 @@ function home() {
             <figcaption>David Ochuko Yaya · Lagos</figcaption>
           </figure>
         </header>
-
-        <section class="block skills-block" id="skills">
-          <p class="kicker">skills.md</p>
-          <h2>The stack I actually run.</h2>
-          <p class="sub">Clouds, platforms, and the unglamorous tools that keep a product standing.</p>
-          <div class="skills" aria-label="Tools and platforms">
-            ${skills.map((skill) => `
-              <div class="skill reveal">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="${skill.path}"/></svg>
-                <span>${skill.name}</span>
-              </div>`).join("")}
-          </div>
-        </section>
 
         <section class="roles" aria-label="How I work">
           <article class="role reveal">
@@ -158,9 +145,22 @@ function home() {
           </ul>
         </section>
 
+        <section class="block skills-block" id="skills">
+          <p class="kicker">skills.md</p>
+          <h2>The stack I actually run.</h2>
+          <p class="sub">Clouds, platforms, and the unglamorous tools that keep a product standing.</p>
+          <div class="skills" aria-label="Tools and platforms">
+            ${skills.map((skill) => `
+              <div class="skill reveal">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="${skill.path}"/></svg>
+                <span>${skill.name}</span>
+              </div>`).join("")}
+          </div>
+        </section>
+
         <section class="talk" id="talk">
           <h2>Let’s talk.</h2>
-          <p>I’m the CTO at Netan, and I still sit with students who are opening a cloud console for the first time. If you are building something that has to be trusted — or you want a founding technology lead — write to me.</p>
+          <p>I’m the CTO at Netan, and I still sit with students who are opening a cloud console for the first time. If you are building something that has to be trusted, or you want a founding technology lead, write to me.</p>
           <p>
             <a href="mailto:${profile.email}">${profile.email}</a>
             <button class="copy" type="button" data-copy="${profile.email}">Copy</button>
@@ -183,7 +183,7 @@ function writingIndex() {
   ].join("");
 
   return {
-    title: "Writing — David Ochuko Yaya",
+    title: "Writing, David Ochuko Yaya",
     html: `
       <div class="wrap">
         <p class="kicker">Writing</p>
@@ -207,7 +207,7 @@ function essayPage(essay) {
   const index = essays.findIndex((item) => item.slug === essay.slug);
   const next = essays[(index + 1) % essays.length];
   return {
-    title: `${essay.title} — David Ochuko Yaya`,
+    title: `${essay.title}, David Ochuko Yaya`,
     html: `
       <article class="essay">
         <p class="kicker">${essay.kicker}</p>
@@ -224,7 +224,7 @@ function essayPage(essay) {
 
 function missing() {
   return {
-    title: "Not found — David Ochuko Yaya",
+    title: "Not found, David Ochuko Yaya",
     html: `
       <div class="wrap">
         <p class="kicker">404</p>
@@ -256,7 +256,7 @@ function setNav(path) {
 
 function spy() {
   if (pathOf() !== "/") return;
-  const sections = ["skills", "work", "teaching", "talk"]
+  const sections = ["work", "teaching", "skills", "talk"]
     .map((id) => document.getElementById(id))
     .filter(Boolean);
   const line = 120;
